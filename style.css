@@ -92,16 +92,47 @@ main > button:hover {
     font-size: 1.5em; 
 }
 
+.mobile-buttons {
+    display: none;
+    flex-direction: column;
+}
+
+.mobile-buttons > button {
+    width: 100vw;
+    border-style: none;
+    cursor: pointer;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 1.5em;
+}
+
+.mobile-buttons > button:hover {
+    transition: 0.5s;
+    background-color: #4a0072;
+    color: white;
+}
+
+
 @media(max-width: 768px) {
     nav > span {
         font-size: 1.5em;
     }
 
-    nav > div > button {
+    .button-container {
         display: none;
+    }
+
+    .mobile-buttons {
+        display: none;
+    }
+
+    nav > div > button {
+        width: 100vw;
     }
     
     .mobile-menu {
         display: block;
     }
+
 }
+
