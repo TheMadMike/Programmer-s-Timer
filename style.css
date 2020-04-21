@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #7b1fa2;
+    color: white;
+    border-bottom: 2px solid #ae52d4;
+}
+
+nav > span {
+    font-size: 2em;
+}
+
+nav > div > button {
+    font-size: 1.5em;
+    border-style: none;
+    border-radius: 2pt;
+    margin-left: 3vw;
+    cursor: pointer;
+    padding: 4pt;
+    background-color: #4a0072;
+    color: white;
+    border-bottom: 1px solid #ae52d4;
+}
+
+nav > div > button:hover {
+    transition: 0.5s;
+    border-bottom: 1px solid #7b1fa2;
+    background-color: #ae52d4;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+
+    flex-direction: column;
+}
+
+main > button {
+    margin-top: 8vh;
+    font-size: 3em;
+    border-style: none;
+    border-radius: 4pt;
+    cursor: pointer;
+    padding: 10pt;
+    background-color: #ae52d4;
+}
+
+main > button:hover {
+    transition: 0.5s;
+    background-color: #4a0072;
+    color: white;
+}
+
+#timer {
+    font-size: 3em;
+}
+
+.timer-container {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+    text-align: center;
+
+    background-color: #efebe9;
+}
+
+.mobile-menu {
+    display: none;
+    align-self: flex-end;
+    cursor: pointer;
+    min-width: 5vw;
+    min-height: 2vh;
+    font-size: 1.5em; 
+}
+
+@media(max-width: 768px) {
+    nav > span {
+        font-size: 1.5em;
+    }
+
+    nav > div > button {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+}
