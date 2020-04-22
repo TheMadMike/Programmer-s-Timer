@@ -47,7 +47,7 @@ main {
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
 
     flex-direction: column;
 }
@@ -127,6 +127,11 @@ main > button:hover {
 
     .button-container {
         display: none;
+    }
+
+    .timer-container {
+        padding-top: 12vh;
+        padding-bottom: 12vh;
     }
 
     .mobile-buttons {
