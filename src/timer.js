@@ -9,19 +9,23 @@ class Timer {
 
         this.currentTime = sessionTime;
         this.isBreak = false;
+        this.message = 'Ok. Now you can focus on programming <3';
     }
 
     startSession() {
         this.currentTime = this.sessionTime;
+        this.message = 'Ok. Now you can focus on programming <3';
+
         this.isBreak = false;
         this._countDown(() => {
             this.startBreak();
         });
-
     }
 
     startBreak() {
         this.currentTime = this.breakTime;
+        this.message = 'Break time!';
+
         this.isBreak = true;
         this._countDown(() => {
             this.startSession();

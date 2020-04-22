@@ -6,8 +6,7 @@ const app = new Vue({
     data: {
         showMobileButtons: false,
         timer: new Timer(900, 900),
-        buttonText: 'Start',
-        message: 'Ok. Now you can focus on programming <3'
+        buttonText: 'Start'
     },
 
     methods: {
@@ -74,6 +73,10 @@ const app = new Vue({
                 return '0' + value;
 
             return value;
+        },
+
+        message: function() {
+            return this.timer.message;
         }
 
     }
