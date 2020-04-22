@@ -6,16 +6,22 @@ const app = new Vue({
     data: {
         showMobileButtons: false,
         timer: new Timer(900, 900),
-        buttonText: 'Start'
+        buttonText: 'Start',
+        breakTime: 15,
+        sessionTime: 15
     },
 
     methods: {
-        showPatternsMenu: () => {
-
-        },
 
         showCustomizationMenu: () => {
 
+        },
+
+        timeValueChanged: function() {
+            this.timer.sessionTime = this.sessionTime*60;
+            this.timer.breakTime = this.breakTime*60;
+            this.timer.startSession();
+            this.timer.pause();
         },
 
         start: function() {

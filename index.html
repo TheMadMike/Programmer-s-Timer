@@ -44,12 +44,12 @@
 
             <div class="time-values">
                 <label for="break-time">Break time [minutes]:</label>
-                <input type="number" min="0" id="break-time" class="time-input" value="15">
+                <input type="number" min="0" class="time-input" @change="timeValueChanged" v-model.number="breakTime">
             </div>
 
             <div class="time-values">
                 <label for="session-time">Session time [minutes]:</label>
-                <input type="number" min="0" id="session-time" class="time-input" value="15">
+                <input type="number" min="0" class="time-input" @change="timeValueChanged" v-model.number="sessionTime">
             </div>
 
             <button @click="buttonOnClick">{{ buttonText }}</button>
