@@ -112,6 +112,13 @@ main > button:hover {
     color: white;
 }
 
+.time-input {
+    width: 8vw;
+}
+
+.time-values {
+    padding: 5pt;
+}
 
 @media(max-width: 768px) {
     nav > span {
