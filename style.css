@@ -123,7 +123,7 @@ main > button:hover {
     }
 
     .mobile-buttons {
-        display: none;
+        display: flex;
     }
 
     nav > div > button {
