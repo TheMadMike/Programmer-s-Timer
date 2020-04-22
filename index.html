@@ -24,14 +24,12 @@
             </div>
 
             <div class="button-container">
-                <button @click="showPatternsMenu">Add pattern</button>
                 <button @click="showCustomizationMenu">Customize</button>
             </div>
 
         </nav>
 
         <div class="mobile-buttons" v-if="showMobileButtons">
-            <button @click="showPatternsMenu">Add pattern</button>
             <button @click="showCustomizationMenu">Customize</button>
         </div>
 
@@ -43,6 +41,17 @@
                 </div>
                 {{ message }}
             </div>
+
+            <div class="time-values">
+                <label for="break-time">Break time [minutes]:</label>
+                <input type="number" min="0" id="break-time" class="time-input" placeholder="15">
+            </div>
+
+            <div class="time-values">
+                <label for="break-time">Session time [seconds]:</label>
+                <input type="number" min="0" id="session-time" class="time-input" placeholder="15">
+            </div>
+
             <button @click="buttonOnClick">{{ buttonText }}</button>
 
         </main>
