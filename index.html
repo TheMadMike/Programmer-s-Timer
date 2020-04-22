@@ -14,23 +14,25 @@
     </head>
 
     <body>
+        <div id="root">
+
         <nav>
             <span>Programmer's Timer</span>
             
-            <div class="mobile-menu">
+            <div @click="showMobileButtons = !showMobileButtons" class="mobile-menu">
                 &#9776;
             </div>
 
             <div class="button-container">
-                <button>Add pattern</button>
-                <button>Customize</button>
+                <button @click="showPatternsMenu">Add pattern</button>
+                <button @click="showCustomizationMenu">Customize</button>
             </div>
 
         </nav>
 
-        <div class="mobile-buttons">
-            <button>Add pattern</button>
-            <button>Customize</button>
+        <div class="mobile-buttons" v-if="showMobileButtons">
+            <button @click="showPatternsMenu">Add pattern</button>
+            <button @click="showCustomizationMenu">Customize</button>
         </div>
 
         <main>
@@ -39,12 +41,16 @@
             <div id="timer">
                 00:00:00
             </div>
-                Until next break
+                Until next break.
             </div>
             <button>Start</button>
 
         </main>
 
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="app.js"></script>
     </body>
 
 </html>
