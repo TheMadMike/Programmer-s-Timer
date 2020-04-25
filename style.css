@@ -120,6 +120,15 @@ main > button:hover {
     padding: 5pt;
 }
 
+.message {
+    font-size: 1.3em;
+    text-align: center;
+    max-width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vh;
+}
+
 @media(max-width: 768px) {
     nav > span {
         font-size: 1.5em;
