@@ -25,6 +25,8 @@ class Timer {
     startBreak() {
         this.currentTime = this.breakTime;
         this.message = 'Break time!';
+        
+        fetchRandomQuoteAsync().then( quote => { this.message = `" ${quote.content} " ~ ${quote.author}`; });
 
         this.isBreak = true;
         this._countDown(() => {
