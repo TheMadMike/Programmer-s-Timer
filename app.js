@@ -20,6 +20,8 @@ const app = new Vue({
         timeValueChanged: function() {
             this.timer.sessionTime = this.sessionTime*60;
             this.timer.breakTime = this.breakTime*60;
+            this.timer.startSession();
+            this.timer.pause();
             this.buttonOnClick = this.resume;
         },
 
