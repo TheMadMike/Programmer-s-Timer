@@ -8,7 +8,7 @@ const assetsUrls = [
     'https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext',
     'https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2',
     '/style.css',
-    'https://cdn.jsdelivr.net/npm/vue/dist/vue.js',
+    'https://cdn.jsdelivr.net/npm/vue',
     '/manifest.json',
     '/favicon.ico',
     '/img/icons-192.png',
