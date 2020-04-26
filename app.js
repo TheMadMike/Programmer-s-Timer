@@ -88,3 +88,20 @@ const app = new Vue({
 
     }
 });
+
+//register the service worker
+
+if('serviceWorker' in navigator) {
+    registerServiceWorker();
+} else {
+    console.log(`Sorry, this browser doesn't support service workers :(`);
+}
+
+async function registerServiceWorker() {
+    try {
+        await navigator.serviceWorker.register('sw.js');
+        console.log('Service worker successfully registered');
+    } catch(error) {
+        console.error('Unable to successfully register this service worker: ', error);
+    }
+}
