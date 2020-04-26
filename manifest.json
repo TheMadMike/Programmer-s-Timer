@@ -17,7 +17,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
+    "start_url": "/Programmer-s-Timer",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
