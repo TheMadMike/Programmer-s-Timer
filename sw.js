@@ -11,8 +11,8 @@ const assetsUrls = [
     'https://cdn.jsdelivr.net/npm/vue',
     '/manifest.json',
     '/favicon.ico',
-    '/img/icons-192.png',
-    '/img/icons-512.png'
+    'https://raw.githubusercontent.com/TheMadMike/Programmer-s-Timer/master/img/icons-192.png',
+    'https://raw.githubusercontent.com/TheMadMike/Programmer-s-Timer/master/img/icons-512.png'
 ];
 
 async function cacheAssets() {
