@@ -8,7 +8,7 @@ const app = new Vue({
         timer: new Timer(900, 900),
         buttonText: 'Start',
         breakTime: 15,
-        sessionTime: 15
+        sessionTime: 15,
     },
 
     methods: {
@@ -84,6 +84,15 @@ const app = new Vue({
 
         message: function() {
             return this.timer.message;
+        },
+
+        status: function() {
+            if(this.timer.isBreak) {
+                return 'break';        
+            }
+
+            return 'work';
+
         }
 
     }
