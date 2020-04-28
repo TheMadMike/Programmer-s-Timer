@@ -12,7 +12,9 @@ const assetsUrls = [
     '/manifest.json',
     '/favicon.ico',
     'https://raw.githubusercontent.com/TheMadMike/Programmer-s-Timer/master/img/icons-192.png',
-    'https://raw.githubusercontent.com/TheMadMike/Programmer-s-Timer/master/img/icons-512.png'
+    'https://raw.githubusercontent.com/TheMadMike/Programmer-s-Timer/master/img/icons-512.png',
+    '/audio/notify_break.mp3',
+    '/audio/notify_session.mp3'
 ];
 
 async function cacheAssets() {
