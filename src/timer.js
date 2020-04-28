@@ -1,5 +1,8 @@
 'use strict';
 
+const breakSound = new Audio('audio/notify_break.mp3');
+const sessionSound = new Audio('audio/notify_session.mp3');
+
 class Timer {
 
     /* the base units of time here are seconds */
@@ -16,6 +19,10 @@ class Timer {
         this.currentTime = this.sessionTime;
         this.message = 'Ok. Now you can focus on programming <3';
 
+        if(this.isBreak) {
+            sessionSound.play();
+        }
+        
         this.isBreak = false;
         this._countDown(() => {
             this.startBreak();
@@ -26,6 +33,7 @@ class Timer {
         this.currentTime = this.breakTime;
         this.message = 'Break time!';
         
+        breakSound.play();
         if(navigator.onLine) {
             fetchRandomQuoteAsync()
             .then( quote => { 
