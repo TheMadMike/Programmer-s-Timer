@@ -2,4 +2,4 @@
 
 Very simple pomodoro-like timer for programmers
 
-Visit at: https://themadmike.github.io/Programmer-s-Timer/
+Visit at: https://programmerstimer.netlify.app/
